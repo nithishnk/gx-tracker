@@ -7,24 +7,24 @@ export default class Main extends Component {
       <div className="container p-5 brdr">
       <div className="row">
       <div className="col-md-4 d-flex justify-content-center">
-      <p>Market value <br></br> <strong>0$</strong></p>
+      <p>Market value <br></br> <strong>$0</strong></p>
       </div>
       <div className="col-md-4 d-flex justify-content-center">
-      <p>Cost basis<br></br> <strong>0$</strong></p>
+      <p>Cost basis<br></br> <strong>$0</strong></p>
       </div>
       <div className="col-md-4 d-flex justify-content-center">
-      <p>Net fiat invested<br></br> <strong>0$</strong></p>
+      <p>Net fiat invested<br></br> <strong>$0</strong></p>
       </div>
       </div>
       <div className="row">
       <div className="col-md-6 d-flex justify-content-center">
-      <p>Market value <br></br> <strong>0$</strong></p>
+      <p>Past day <br></br> <strong>0.00%</strong></p>
       </div>
       <div className="col-md-6 d-flex justify-content-center">
-      <p>Market value <br></br> <strong>0$</strong> </p>
+      <p>All time return <br></br> <strong>0.00%$</strong> </p>
       </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-2">
         <Chart/>
         </div>
       </div>

@@ -28,12 +28,12 @@ export default class Home extends Component {
 </div>
     <ListGroup className="list-group-flush p-2">
     
-    <div className="d-flex">
-    <ListGroupItem>0 Exchanges</ListGroupItem>
-    <div className="my-auto justify-content-end">
+    
+    <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">0 Exchanges</p>
+    <div className="">
     <Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Dropdown Button
+    Add Exchange
   </Dropdown.Toggle>
  <Dropdown.Menu>
     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -44,16 +44,18 @@ export default class Home extends Component {
 </div>
 </div>
 <div className="">
-<div class="alert alert-success p-2 text-center" role="alert ">
+<div class="mt-3 mb-1 alert alert-success text-center p-2" role="alert ">
   Add Your Exchange accounts
 </div>
     </div>
-    <ListGroupItem>Vestibulum at eros
+    </ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">0 local wallets</p>
+    
     <div className="">
-    <div className="my-auto justify-content-end">
     <Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Dropdown Button
+    Add Wallet
   </Dropdown.Toggle>
  <Dropdown.Menu>
     <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
@@ -63,20 +65,106 @@ export default class Home extends Component {
 </Dropdown>
 </div>
     </div>
+    <div className="wid">
+<div class="mt-3 mb-1 alert alert-success text-center p-2" role="alert ">
+  Add Your Crypto Wallets
+</div>
+    </div>
     </ListGroupItem>
-    <ListGroupItem>Vestibulum at eros</ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">
+    0 imported wallets</p>
+    </div>
+    </ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">
+    Add Add your non-crypto accounts?</p>
     
+    <a href="#">Banking & Brokerge Accounts</a>
+    </div>
+    </ListGroupItem>
   </ListGroup>
-  <Card.Body>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
 </Card>
 </div>
 </div>
         </div>
+        <div className="container">
+        <div className="row">
+        <div className="col-md-8 mt-4">
+        <div class="card mb-4">
+<div class="card-header d-flex bg-transparent">
+<div class="my-auto mr-auto font-weight-bold">Your Portfolio</div>
+<a class="my-auto btn btn-light mr-3" href="/performance">Performance</a>
+<a class="my-auto btn btn-light" href="/share">Share</a>
+</div>
+<div class="card-body p-1 p-sm-2" style={{overflow: "auto"}}>
+<div class="p-3 text-muted">Nothing in your portfolio yet.</div>
+</div>
+</div>  
         </div>
-        
+        <div className="col-md-4">
+<Card>  
+  <div className="card-header bg-transparent">
+  <div className="d-flex">
+  <div class="my-auto mr-auto font-weight-bold">Your crypto Taxes</div>
+  </div>
+</div>
+    <ListGroup className="list-group-flush p-2">
+    <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">2019</p>
+    <div className="">
+    <a class="my-auto btn btn-light" href="/wallets">Get started</a>
+</div>
+</div>
+    </ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">2018</p>
+    <div className="">
+    <a class="my-auto btn btn-light" href="/wallets">Get started</a>
+</div>
+    </div>
+    </ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">
+    Thinking of executing a transaction? </p>
+    
+    <a href="#">Preview Tax Impact</a>
+    </div>
+    </ListGroupItem>
+  </ListGroup>
+</Card>
+<Card className="mt-4">  
+  <div className="card-header bg-transparent">
+  <div className="d-flex">
+  <div class="my-auto mr-auto font-weight-bold">Portfolio Insights</div>
+  </div>
+</div>
+    <ListGroup className="list-group-flush p-2">
+    <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">Funds on Exchange</p>
+    <div className="">
+    
+</div>
+</div>
+    </ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">
+    You currently don't have opportunities to harvest tax losses. </p>
+    
+    <a href="#">Tax loss Harvesting</a>
+    </div>
+    </ListGroupItem>
+    <ListGroupItem><div className="row"> 
+    <p className="mr-auto my-auto">
+    Want to automatically purchase cryptocurrency on a regular basis? </p>
+    
+    <a href="#">Dollor cost Averaging</a>
+    </div>
+    </ListGroupItem>
+  </ListGroup>
+</Card>
+</div>
+        </div>
+        </div>
+        </div>        
     )
   }
 }
