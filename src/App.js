@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import Navbar from './components/navbar/Navbar'
-import Home from './components/home/Home'
-import Performance from '../src/components/performance/Performance'
-import Price from '../src/components/price/Price'
+import Route from '../src/components/Route'
 export default class App extends Component {
   render() {
     return (
       <div>
-      <Navbar/>
-      <Performance/>
+      <Route/>
       </div>
     )
   }

@@ -12,12 +12,12 @@ export default class Header extends Component {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features">Dashboard</Nav.Link>
-      <Nav.Link href="#">Performance</Nav.Link>
-      <Nav.Link href="#pricing">Wallets</Nav.Link>
+      <Nav.Link href="/">Dashboard</Nav.Link>
+      <Nav.Link href="/Performance">Performance</Nav.Link>
+      <Nav.Link href="/Wallets">Wallets</Nav.Link>
       <Nav.Link href="#pricing">Transaction</Nav.Link>
       <Nav.Link href="#pricing">Tax</Nav.Link>
-      <Nav.Link href="#pricing">Price</Nav.Link>
+      <Nav.Link href="/Price">Price</Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
