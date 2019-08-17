@@ -3,6 +3,7 @@ import Chart from './Chart'
 import '../performance/chart.css' 
 
 export default class Performance extends Component {
+  
   render() {
     return (
       <div>

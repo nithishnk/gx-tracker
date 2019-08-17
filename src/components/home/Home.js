@@ -3,7 +3,7 @@ import Chart from '../home/chart/Main'
 import { Button, Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
 import '../home/home.css'
 
-export default class Home extends Component {
+export default class Home extends Component {zzz
   render() {
     return (
       <div>
@@ -34,9 +34,15 @@ export default class Home extends Component {
     Add Exchange
   </Dropdown.Toggle>
  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+    <Dropdown.Item href="/addaccount">Binance</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Binance DEX</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Coinbase</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Coinbase Pro</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Gemini</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Kraken</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Kucoin</Dropdown.Item>
+    <hr></hr>
+    <Dropdown.Item href="#/action-3">More...(300+ Exchanges)</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 </div>

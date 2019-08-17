@@ -3,6 +3,8 @@ import axios from 'axios';
 export default class AssetsSupport extends Component {
   state = {
     crypto: []
+
+    
   }
   componentDidMount(){
     this.getdata();

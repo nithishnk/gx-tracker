@@ -5,6 +5,7 @@ import Performance from '../components/performance/Performance'
 import Price from '../components/price/Price'
 import Header from '../components/navbar/Navbar'
 import Wallets from '../components/wallets/Wallet'
+import Addaccount from '../components/exchanges/Addaccount'
 export default class Routea extends Component {
   render() {
     return (
@@ -15,7 +16,7 @@ export default class Routea extends Component {
       <Route path="/Performance" exact component={Performance}/> 
       <Route path="/Price" exact component={Price}/>
       <Route path="/Wallets" exact component={Wallets}/>
-      
+      <Route path="/addaccount" exact component={Addaccount}/>
       </Router>
       </div>
     )
