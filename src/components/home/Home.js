@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import Chart from '../home/chart/Main'
 import { Button, Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
 import '../home/home.css'
+import {ProductConsumer} from '../../contextAPI/Context'
 
-export default class Home extends Component {zzz
+export default class Home extends Component {
   render() {
     return (
+    <ProductConsumer>
+{((value) => {
+const {exchanges, exvalue, addingexchange, } = value;
+return (
       <div>
         <div className="container mt-5">
         <div className="row">
@@ -27,22 +32,19 @@ export default class Home extends Component {zzz
     <ListGroup className="list-group-flush p-2">
     
     
-    <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">0 Exchanges</p>
+    <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">{exvalue} Exchanges</p>
     <div className="">
     <Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">
     Add Exchange
   </Dropdown.Toggle>
+
  <Dropdown.Menu>
-    <Dropdown.Item href="/addaccount">Binance</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Binance DEX</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Coinbase</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Coinbase Pro</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Gemini</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Kraken</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Kucoin</Dropdown.Item>
+{exchanges.map((addexchange,i)=>
+  <Dropdown.Item href="/addAccount" onClick={addingexchange} >{addexchange.exchangename}</Dropdown.Item>
+)}
     <hr></hr>
-    <Dropdown.Item href="#/action-3">More...(300+ Exchanges)</Dropdown.Item>
+    <Dropdown.Item >More...(300+ Exchanges)</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 </div>
@@ -168,7 +170,10 @@ export default class Home extends Component {zzz
 </div>
         </div>
         </div>
-        </div>        
+        </div>  
+        )
+      })}
+      </ProductConsumer>      
     )
   }
 }
