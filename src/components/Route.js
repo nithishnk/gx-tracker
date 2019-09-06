@@ -7,6 +7,9 @@ import Header from '../components/navbar/Navbar'
 import Wallets from '../components/wallets/Wallet'
 import Addaccount from '../components/exchanges/Addaccount'
 import Addwallet from '../components/wallets/Addwallet'
+import Transaction from '../components/Transactions/Transaction'
+import Apikey from './home/Apikey'
+import MoreExchanges from '../components/home/moreexchanges'
 import {ProductConsumer} from '../contextAPI/Context'
 
 export default class Routea extends Component {
@@ -20,11 +23,14 @@ export default class Routea extends Component {
       <Header/>
       <Router>
       <Route path="/" exact component={Home} value={1}/>
+      <Route path="/MoreExchanges" exact component={MoreExchanges}/>
       <Route path="/Performance" exact component={Performance}/> 
       <Route path="/Price" exact component={Price}/>
       <Route path="/Wallets" exact component={Wallets} value={2}/>
       <Route path="/addaccount" exact component={Addaccount}/>
       <Route path="/addwallet" exact component={Addwallet}/>
+      <Route path="/Transaction" exact component={Transaction}/>
+      <Route path="/Apikey" exact component={Apikey}/>
       </Router>
       </div>   )
       })}

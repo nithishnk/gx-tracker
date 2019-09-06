@@ -4,6 +4,7 @@ import Chart from '../home/chart/Main'
 import {Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
 import '../home/home.css'
 import {ProductConsumer} from '../../contextAPI/Context'
+import axios from 'axios';
 
 export default class Home extends Component {
   render() {
@@ -49,7 +50,7 @@ return (
   </>
 )}
     <hr></hr>
-    <Dropdown.Item >More...(300+ Exchanges)</Dropdown.Item>
+    <Dropdown.Item ><Link to="/MoreExchanges">More...(100+ Exchanges)</Link></Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 </div>
