@@ -6,19 +6,29 @@ import Price from '../components/price/Price'
 import Header from '../components/navbar/Navbar'
 import Wallets from '../components/wallets/Wallet'
 import Addaccount from '../components/exchanges/Addaccount'
+import Addwallet from '../components/wallets/Addwallet'
+import {ProductConsumer} from '../contextAPI/Context'
+
 export default class Routea extends Component {
   render() {
+    return (
+      <ProductConsumer>
+  {((value) => {
+  const {} = value;
     return (
       <div>
       <Header/>
       <Router>
-      <Route path="/" exact component={Home}/>
+      <Route path="/" exact component={Home} value={1}/>
       <Route path="/Performance" exact component={Performance}/> 
       <Route path="/Price" exact component={Price}/>
-      <Route path="/Wallets" exact component={Wallets}/>
+      <Route path="/Wallets" exact component={Wallets} value={2}/>
       <Route path="/addaccount" exact component={Addaccount}/>
+      <Route path="/addwallet" exact component={Addwallet}/>
       </Router>
-      </div>
+      </div>   )
+      })}
+      </ProductConsumer> 
     )
   }
 }

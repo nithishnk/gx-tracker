@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
-import { Button, Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
-import SectionTwoCards from '../wallets/SectionTwoCards'
+import { Dropdown } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
+import {ProductConsumer} from '../../contextAPI/Context'
 export default class Wallet extends Component {
   render() {
+    return (
+      <ProductConsumer>
+  {((value) => {
+  const {exchanges, exvalue} = value;
     return (
       <div className="container mt-5">
       <div className="d-flex justify-content-center">
@@ -11,11 +16,14 @@ export default class Wallet extends Component {
   <Dropdown.Toggle variant="success" id="dropdown-basic">
     Add Exchange
   </Dropdown.Toggle>
-
-  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+<Dropdown.Menu>
+{exchanges.map((addexchangewallet)=>
+  <> 
+  <Dropdown.Item><Link to="/addaccount">{addexchangewallet.exchangename} </Link></Dropdown.Item>
+  </>
+)}
+    <hr></hr>
+    <Dropdown.Item >More...(300+ Exchanges)</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 </div>
@@ -59,7 +67,7 @@ EXCHANGES
 </div>
 <ul class="list-group list-group-flush">
 <li class="list-group-item text-muted py-3">
-None added
+{exvalue} added
 </li>
 </ul>
 <div class="card-header small font-weight-bold">
@@ -170,6 +178,9 @@ No coins
 </div>
 </div>
       </div>
+      )
+    })}
+    </ProductConsumer> 
     )
   }
 }

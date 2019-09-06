@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component} from 'react'
+import {Link} from 'react-router-dom'
 import Chart from '../home/chart/Main'
-import { Button, Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
+import {Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
 import '../home/home.css'
 import {ProductConsumer} from '../../contextAPI/Context'
 
@@ -9,7 +10,7 @@ export default class Home extends Component {
     return (
     <ProductConsumer>
 {((value) => {
-const {exchanges, exvalue, addingexchange, } = value;
+const {exchanges, exvalue, walletvalue, wallet} = value;
 return (
       <div>
         <div className="container mt-5">
@@ -40,8 +41,12 @@ return (
   </Dropdown.Toggle>
 
  <Dropdown.Menu>
-{exchanges.map((addexchange,i)=>
-  <Dropdown.Item href="/addAccount" onClick={addingexchange} >{addexchange.exchangename}</Dropdown.Item>
+{exchanges.map((addexchange)=>
+  <>
+  
+  <Dropdown.Item><Link to="/addaccount">{addexchange.exchangename} </Link></Dropdown.Item>
+
+  </>
 )}
     <hr></hr>
     <Dropdown.Item >More...(300+ Exchanges)</Dropdown.Item>
@@ -56,7 +61,7 @@ return (
     </div>
     </ListGroupItem>
     <ListGroupItem><div className="row"> 
-    <p className="mr-auto my-auto">0 local wallets</p>
+    <p className="mr-auto my-auto">{walletvalue} local wallets</p>
     
     <div className="">
     <Dropdown>
@@ -64,9 +69,11 @@ return (
     Add Wallet
   </Dropdown.Toggle>
  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+   {wallet.map((addwallet)=>
+   <>
+    <Dropdown.Item><Link to="/addwallet">{addwallet.walletname}</Link></Dropdown.Item>
+    </>
+   )}
   </Dropdown.Menu>
 </Dropdown>
 </div>

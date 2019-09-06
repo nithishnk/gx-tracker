@@ -16,6 +16,16 @@ class ProductProvider extends Component {
 
   ],
   exvalue : 0,
+  wallet:[
+    {id:"1",walletname:"Ledger"},
+    {id:"2",walletname:"Trezor"},
+    {id:"3",walletname:"Jaxx"},
+    {id:"4",walletname:"Public Address"},
+    {id:"5",walletname:"xPub Address"}
+  ],
+  walletvalue : 0,
+  toggle : true,
+  showDivBox : false
   }
 
   inputValue = async (e) => {
@@ -23,10 +33,19 @@ class ProductProvider extends Component {
         [e.target.name]: e.target.value
       });
   }
-  addingexchange=(e)=> {
+  addingexchange=()=> {
     this.setState({
       exvalue : this.state.exvalue + 1
     })
+    }
+  addingwallet=()=>{
+    this.setState({
+      walletvalue : this.state.walletvalue + 1
+    })
+  }
+
+  componentDidMount() {
+    window.scrollTo(0,0)
     }
 
 
@@ -36,6 +55,24 @@ class ProductProvider extends Component {
       minimumFractionDigits: 2
     });
 
+// swithbutton=() => 
+// {
+//   this.setState({
+//     toggle : !this.state.toggle
+//   })
+// }
+// handleOnChange = e => {
+ 
+//     if(value = 1) {
+//       showDivBox : e.target.value === 1
+//     }
+//      else if (value = 2){
+
+//       showDivBox : e.target.value === 2
+//     }
+
+ 
+// };
 
 
   render() {
@@ -44,7 +81,11 @@ class ProductProvider extends Component {
         ...this.state,
 
         inputValue:this.inputValue,
-        addingexchange:this.addingexchange
+        addingexchange:this.addingexchange,
+        addingwallet:this.addingwallet,
+        componentDidMount:this.componentDidMount,
+        swithbutton:this.swithbutton,
+        handleOnChange:this.handleOnChange
        
       }}>
         {this.props.children}
