@@ -3,8 +3,6 @@ import axios from 'axios';
 export default class AssetsSupport extends Component {
   state = {
     crypto: []
-
-    
   }
   componentDidMount(){
     this.getdata();
@@ -18,10 +16,6 @@ export default class AssetsSupport extends Component {
       })
     }
         
-
-
-
-
 render() {
   console.log("Nithish", this.state.crypto )
 return (

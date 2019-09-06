@@ -7,7 +7,7 @@ export default class Wallet extends Component {
     return (
       <ProductConsumer>
   {((value) => {
-  const {exchanges, exvalue} = value;
+  const {exchanges, exvalue, walletvalue, wallet} = value;
     return (
       <div className="container mt-5">
       <div className="d-flex justify-content-center">
@@ -29,15 +29,16 @@ export default class Wallet extends Component {
 </div>
 <div className="p-2">
 <Dropdown>
-<Dropdown.Toggle variant="success" id="dropdown-basic">
-  Add Wallet
-</Dropdown.Toggle>
-
-<Dropdown.Menu>
-  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-</Dropdown.Menu>
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+    Add Wallet
+  </Dropdown.Toggle>
+ <Dropdown.Menu>
+   {wallet.map((addwallet)=>
+   <>
+    <Dropdown.Item><Link to="/addwallet">{addwallet.walletname}</Link></Dropdown.Item>
+    </>
+   )}
+  </Dropdown.Menu>
 </Dropdown>
 </div>
 <div className="p-2">
@@ -47,9 +48,9 @@ export default class Wallet extends Component {
 </Dropdown.Toggle>
 
 <Dropdown.Menu>
-  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  <Dropdown.Item href="#/action-1">Add Transaction</Dropdown.Item>
+  <Dropdown.Item href="#/action-2">Import from CSV</Dropdown.Item>
+  <Dropdown.Item href="#/action-3">Download CSV</Dropdown.Item>
 </Dropdown.Menu>
 </Dropdown>
 </div>
