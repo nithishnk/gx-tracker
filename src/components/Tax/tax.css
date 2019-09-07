@@ -1,0 +1,10 @@
+.choose-position{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 38%;
+}
+.disable-section{
+  background-color: aliceblue;
+  opacity: 0.2;
+}

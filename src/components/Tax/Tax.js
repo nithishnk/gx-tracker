@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Dropdown, Card, ListGroup, DropdownButton, ListGroupItem, Table } from 'react-bootstrap';
-
+import { Dropdown, Card, ListGroup, DropdownButton, ListGroupItem, Table, ButtonToolbar, Button } from 'react-bootstrap';
+import '../Tax/tax.css'
 export default class componentName extends Component {
   render() {
     return (
@@ -114,7 +114,7 @@ export default class componentName extends Component {
 </div>
 </div>
     </ListGroupItem>
-    <div className="text-muted">
+    <div className="disable-section">
     <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">Capital Gains CSV</p>
     <div className="">
     <a class="my-auto btn btn-light" href="#">Download</a>
@@ -159,7 +159,14 @@ export default class componentName extends Component {
     </ListGroupItem>
     </div>
   </ListGroup>
+  
 </Card>
+<div className="choose-position">
+  <ButtonToolbar>
+  <Button className="p-3 mb-2 font-weight-bold" variant="primary">Choose Your TAX Plan</Button>
+  </ButtonToolbar>
+  <a className="ml-3" href="https://s3-us-west-1.amazonaws.com/coin-tracker-public/static/files/sample_f8949.pdf" target="_blank" rel="noopener noreferrer">Sample IRS Form 8949</a>
+  </div>
         </div>
         <div className="col-md-5 mt-3">
         <Card style={{ width: '100%' }}>
@@ -201,6 +208,7 @@ If you received crypto through airdrops, forks, mining, or payments, manually ma
     </ListGroupItem>
     
   </ListGroup>
+  
 </Card>
         </div>
         </div>

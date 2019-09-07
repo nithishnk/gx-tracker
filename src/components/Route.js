@@ -11,6 +11,7 @@ import Transaction from '../components/Transactions/Transaction'
 import Apikey from './home/Apikey'
 import MoreExchanges from '../components/home/moreexchanges'
 import Tax from '../components/Tax/Tax'
+import Chooseplan from '../components/Tax/Chooseplan'
 import {ProductConsumer} from '../contextAPI/Context'
 
 export default class Routea extends Component {
@@ -33,6 +34,7 @@ export default class Routea extends Component {
       <Route path="/Transaction" exact component={Transaction}/>
       <Route path="/Tax" exact component={Tax}/>
       <Route path="/Apikey" exact component={Apikey}/>
+      <Route path="/Chooseplan" exact component={Chooseplan}/>
       </Router>
       </div>   )
       })}
