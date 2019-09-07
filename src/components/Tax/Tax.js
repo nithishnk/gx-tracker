@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Dropdown, Card, ListGroup, DropdownButton, ListGroupItem, Table, ButtonToolbar, Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 import '../Tax/tax.css'
 export default class componentName extends Component {
   render() {
@@ -17,8 +18,8 @@ export default class componentName extends Component {
        </div>
        <div className="d-flex my-auto flex-wrap justify-content-center ">
        <div class="mt-5 alert alert-info d-inline-block font-weight-bold mt-3">
-        <a href="#">
-        Choose a tax plan</a>
+        <a href="#"><Link to="/Chooseplan">
+        Choose a tax plan</Link></a>
         to get your tax summary &amp; reports.
 </div>
        </div>
@@ -163,7 +164,7 @@ export default class componentName extends Component {
 </Card>
 <div className="choose-position">
   <ButtonToolbar>
-  <Button className="p-3 mb-2 font-weight-bold" variant="primary">Choose Your TAX Plan</Button>
+  <Button className="p-3 mb-2 font-weight-bold" variant="primary"><Link className="link-text-clr" to="/Chooseplan">Choose Your TAX Plan</Link></Button>
   </ButtonToolbar>
   <a className="ml-3" href="https://s3-us-west-1.amazonaws.com/coin-tracker-public/static/files/sample_f8949.pdf" target="_blank" rel="noopener noreferrer">Sample IRS Form 8949</a>
   </div>

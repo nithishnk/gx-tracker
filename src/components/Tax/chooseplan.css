@@ -1,0 +1,11 @@
+.dropdown-text .dropdown-toggle
+{
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.card-button-bottom
+{
+  margin-top:5.5rem;
+}
