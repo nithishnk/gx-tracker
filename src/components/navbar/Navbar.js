@@ -16,7 +16,7 @@ export default class Header extends Component {
       <Nav.Link href="/Performance">Performance</Nav.Link>
       <Nav.Link href="/Wallets">Wallets</Nav.Link>
       <Nav.Link href="/Transaction">Transaction</Nav.Link>
-      <Nav.Link href="#pricing">Tax</Nav.Link>
+      <Nav.Link href="/Tax  ">Tax</Nav.Link>
       <Nav.Link href="/Price">Price</Nav.Link>
     </Nav>
   </Navbar.Collapse>
