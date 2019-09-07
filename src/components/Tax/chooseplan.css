@@ -5,7 +5,85 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.card-button-bottom
+.customcardstyle1
 {
-  margin-top:5.5rem;
+  color:#607D8B;
+}
+.customcardstyle2
+{
+  color:#0091EA;
+}
+.customcardstyle3
+{
+  color:#6200EA;
+}
+.customcardstyle4
+{
+  color:#827717;
+}
+.customalertstyle
+{
+  color: #4527A0 !important; 
+  background-color: #D1C4E9 !important; 
+  border-color : #B39DDB !important;
+}
+.customselectstyle1
+{
+  background-color: #607D8B;
+  border-color: #607D8B;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle2
+{ margin-top: 5.6rem;
+  background-color:#0091EA;
+  border-color: #0091EA;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle3
+{ margin-top: 5.6rem;
+  background-color: #6200EA;
+  border-color: #6200EA;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle4
+{ margin-top: 5.6rem;
+  background-color: #827717;
+  border-color: #827717;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle1:hover
+{
+  background-color: #607D8B;
+  border-color: #607D8B;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle2:hover
+{
+  background-color:#0091EA;
+  border-color: #0091EA;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle3:hover
+{ 
+  background-color: #6200EA;
+  border-color: #6200EA;
+  font-size: 14px;
+  color: white !important;
+}
+.customselectstyle4:hover
+{ 
+  background-color: #827717;
+  border-color: #827717;
+  font-size: 14px;
+  color: white !important;
+}
+.marginleft
+{
+  margin-left:18rem;
 }
