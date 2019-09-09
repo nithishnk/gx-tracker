@@ -13,7 +13,7 @@ export default class Wallet extends Component {
       <div className="d-flex justify-content-center">
       <div className="p-2">
       <Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  <Dropdown.Toggle variant="light" id="dropdown-basic">
     Add Exchange
   </Dropdown.Toggle>
 <Dropdown.Menu>
@@ -23,13 +23,13 @@ export default class Wallet extends Component {
   </>
 )}
     <hr></hr>
-    <Dropdown.Item >More...(300+ Exchanges)</Dropdown.Item>
+    <Dropdown.Item ><Link to="/MoreExchanges">More...(100+ Exchanges)</Link></Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 </div>
 <div className="p-2">
 <Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  <Dropdown.Toggle variant="light" id="dropdown-basic">
     Add Wallet
   </Dropdown.Toggle>
  <Dropdown.Menu>
@@ -43,7 +43,7 @@ export default class Wallet extends Component {
 </div>
 <div className="p-2">
 <Dropdown>
-<Dropdown.Toggle variant="success" id="dropdown-basic">
+<Dropdown.Toggle variant="light" id="dropdown-basic">
   Transactions
 </Dropdown.Toggle>
 

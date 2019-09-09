@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Dropdown, Card, ListGroup, DropdownButton, ListGroupItem, Table, ButtonToolbar, Button } from 'react-bootstrap';
+import { Dropdown, Card, ListGroup, DropdownButton} from 'react-bootstrap';
 import '../Tax/chooseplan.css'
 import tickimage from '../../Images/tick.png'
 import rightimage from '../../Images/right.png'
+import { Link } from 'react-router-dom'
 export default class componentName extends Component {
 
   state={
@@ -16,6 +17,7 @@ export default class componentName extends Component {
         transactionNumstyle: "font-weight-bold",
         alertstyle: "alert alert-info small text-center font-weight-bold m-0 p-2  customalertstyle",
         selectstyle:"btn btn-primary btn-block text-uppercase font-weight-bold py-2 customselectstyle1",
+        pathname:"/Checkout"
       },
       {
         id:2, cardtitle:"TRADER", currency:"$", price:"199", content:"One-time payment for the tax year", transactionNum:"1,500", transactionContent:"transactions", select:"CHOOSE PLAN",
@@ -87,10 +89,9 @@ return (
     </Card.Text>
     <div class={cl.alertstyle}>{cl.alert}
 </div>
-<div className="mt-3">
-<a id="tax-package-btn-4" class={cl.selectstyle}>
-{cl.select}
-</a>
+<div className="mt-3"><Link to={cl.pathname}>
+<span id="tax-package-btn-4"  class={cl.selectstyle}>
+{cl.select}</span></Link>
 </div>
   </Card.Body>
 </Card>
@@ -163,7 +164,7 @@ Contact Us
   </div>
 </div>
       </div>
-      <div class="text-center text-white py-5" style={{backgroundColor: "#0083ff"}}>
+      <div class="text-center text-white py-5 mt-5" style={{backgroundColor: "#0083ff"}}>
 <div class="d-inline-block">
 <img className="mb-4" src={tickimage}></img>
 <div class="h3 font-weight-bold mb-5">One year money-back guarantee</div>

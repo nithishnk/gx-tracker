@@ -4,7 +4,6 @@ import Chart from '../home/chart/Main'
 import {Card, ListGroup, ListGroupItem, Dropdown } from 'react-bootstrap';
 import '../home/home.css'
 import {ProductConsumer} from '../../contextAPI/Context'
-import axios from 'axios';
 
 export default class Home extends Component {
   render() {
@@ -37,7 +36,7 @@ return (
     <ListGroupItem> <div className="row"> <p className="mr-auto my-auto">{exvalue} Exchanges</p>
     <div className="">
     <Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  <Dropdown.Toggle variant="light" id="dropdown-basic">
     Add Exchange
   </Dropdown.Toggle>
 
@@ -66,7 +65,7 @@ return (
     
     <div className="">
     <Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic">
+  <Dropdown.Toggle variant="light" id="dropdown-basic">
     Add Wallet
   </Dropdown.Toggle>
  <Dropdown.Menu>

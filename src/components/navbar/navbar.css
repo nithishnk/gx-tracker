@@ -1,3 +1,15 @@
 .bg-dark {
   background-color: #0083ff !important;
 }
+.select-width .custom-select
+{
+  width: 25% !important;
+  background-color: #007bff;
+  color:rgba(255,255,255,.5);
+}
+@media only screen and (min-width: 992px) {
+.parent-nav .navbar
+{
+  padding-left: 6.5rem !important;
+}
+}

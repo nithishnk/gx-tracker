@@ -3,11 +3,25 @@ import './apikey.css'
 import {Form, Col, Row, Button} from 'react-bootstrap'
 import {ProductConsumer} from '../../contextAPI/Context'
 import {Link} from 'react-router-dom'
-
+import axios from 'axios';
 
 export default class Addaccount extends Component {
-  
+  state = {
+    exlist: []
+  }
+  componentDidMount(){
+    this.getdata();
+    }
+    getdata = () => {
+      axios.get('http://3.16.168.61:80/ccxt/exchange-list')
+      .then(res => {
+        this.setState({
+          exlist: res.data.Data
+        })
+      })
+    }
   render() {
+    console.log("Exchangeslist", this.state.exlist )
     return (
       <ProductConsumer>
   {((value) => {
@@ -15,26 +29,25 @@ export default class Addaccount extends Component {
     return (
       <div className="container mt-5">
         <div className="d-flex justify-content-center">
-        <h3 className=""><a href="/"><i class="fa fa-chevron-left px-5" aria-hidden="true"></i></a>New Binance Account</h3>
+        <h3 className=""><a href="/"><i class="fa fa-chevron-left px-5" aria-hidden="true"></i></a>New 
+        BTC 
+        Markets Account</h3>
         </div>
         <div className="d-flex justify-content-center">
         <div className="col-xl-6 col-centered pt-3">
-      <div class="alert alert-info small m-5">
-<span>We are only requesting <strong>view permissions</strong>. This does not give us access to your private keys nor the ability move your funds.</span>
-</div>
-<p>To add your Binance account to CoinTracker, follow these steps:</p>
+     <p>To add your BTC Markets account to CoinTracker, follow these steps:</p>
 <ol class="mb-5">
-<li>Open the Binance <strong><a href="https://www.binance.com/userCenter/createApi.html" target="_blank" rel="noopener noreferrer">API<i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i></a></strong> page</li>
-<li><strong>Create a new API key</strong> by entering a label, such as '<strong>CoinTracker</strong>', and clicking the <strong>Create New Key</strong> button</li>
+
+{/*{this.state.exlist.map((list) => {
+return( */}
+  <li>Open the BTC Markets<strong><a href="#" target="_blank" rel="noopener noreferrer"> API Key <i class="fas fa-external-link-alt ml-1" aria-hidden="true"></i></a></strong>page</li>
+{/*  )})}*/}
+  
+  
+<li>Click the<strong>Generate API Key</strong>button</li>
 <li>If applicable, enter your <strong>two-factor authentication code</strong></li>
-<li>Copy the <strong>API Key</strong> and <strong>Secret</strong> below</li>
-<li class="mt-3"><strong class="text-muted mr-2 small">RECOMMENDED</strong> Disable trading access for this API key:
-<ul>
-<li>Click the <strong>Edit</strong> button</li>
-<li>Disable the <strong>Enable Trading</strong> permission</li>
-<li>Click <strong>Save</strong></li>
-<li>If applicable, enter your <strong>two-factor authentication code</strong></li>
-</ul>
+<li>Click <strong>Display</strong> to reveal the <strong>Secret Key</strong></li>
+<li>Copy the <strong>Public Key</strong> and <strong>Secret Key</strong> below
 </li>
 </ol>
 <Form>

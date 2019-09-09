@@ -190,17 +190,17 @@ If you received crypto through airdrops, forks, mining, or payments, manually ma
     <p class="my-auto">₹0.00</p>
 </div>
 </div>
-<div className="row mt-3"> <p className="mr-auto my-auto small">Airdrops</p>
+<div className="row mt-3"> <p className="mr-auto my-auto small">Forks</p>
     <div className="">
     <p class="my-auto">₹0.00</p>
 </div>
 </div>
-<div className="row mt-3"> <p className="mr-auto my-auto small">Airdrops</p>
+<div className="row mt-3"> <p className="mr-auto my-auto small">Mining</p>
     <div className="">
     <p class="my-auto">₹0.00</p>
 </div>
 </div>
-<div className="row mt-3"> <p className="mr-auto my-auto small">Airdrops</p>
+<div className="row mt-3"> <p className="mr-auto my-auto small">Payments</p>
     <div className="">
     <p class="my-auto">₹0.00</p>
 </div>

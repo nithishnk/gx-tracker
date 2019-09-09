@@ -24,7 +24,7 @@ export default class componentName extends Component {
   </>
 )}
     <hr></hr>
-    <Dropdown.Item >More...(300+ Exchanges)</Dropdown.Item>
+    <Dropdown.Item ><Link to="/MoreExchanges">More...(100+ Exchanges)</Link></Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 <div className="pl-2">
