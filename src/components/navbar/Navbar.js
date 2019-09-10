@@ -29,7 +29,7 @@ export default class Header extends Component {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-  <Navbar.Brand className="px-2" href="#home"><img src={gxlogo} style={{width: "30px"}}></img></Navbar.Brand>
+  <Navbar.Brand className="px-2" href="/"><img src={gxlogo} style={{width: "30px"}}></img></Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link className="px-4" href="/">Dashboard</Nav.Link>
       <Nav.Link className="px-4" href="/Performance">Performance</Nav.Link>

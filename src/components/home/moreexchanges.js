@@ -47,8 +47,7 @@ Directly connect your exchange accounts.
             <>
             <a href="/Apikey">
             <img className="ml-5" style={{width:"6rem",height:"2rem",margin:"2rem"}} src={image}/></a>
-            
-            </>
+           </>
           )          
         })}
       </div>

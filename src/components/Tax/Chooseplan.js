@@ -173,44 +173,44 @@ If you aren't completely satisfied with GxTracker, we will refund your payment i
 </p>
 </div>
 </div>
-<div className="mx-5 mt-5">
+<div className="mt-5">
 <div class="h3 font-weight-bold text-center mt-4 mb-5">Included in all plans</div>
-<div className="marginleft mb-5">
-<div className="mx-5 mb-2 d-flex">
+<div className="container text-center">
+<div className="mb-2 d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Support for bitcoin, ethereum, and 2,500+ other coins and tokens</div>
+<div class="">Support for bitcoin, ethereum, and 2,500+ other coins and tokens</div>
 </div>
-<div className="mx-5  text-center d-flex">
+<div className="d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Cost basis methods: FIFO, LIFO, HIFO, ACB, Share pool</div>
+<div class="">Cost basis methods: FIFO, LIFO, HIFO, ACB, Share pool</div>
 </div>
-<div className="mx-5 mb-2 mt-2  text-center d-flex">
+<div className="mb-2 mt-2 d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Auto sync with unlimited exchanges and wallets</div>
+<div class="">Auto sync with unlimited exchanges and wallets</div>
 </div>
-<div className="mx-5  text-center d-flex">
+<div className="d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Bulk uploads of transactions CSVs</div>
+<div class="">Bulk uploads of transactions CSVs</div>
 </div>
-<div className="mx-5 mb-2 mt-2  text-center d-flex">
+<div className=" mb-2 mt-2 d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Transaction history CSV</div>
+<div class="">Transaction history CSV</div>
 </div>
-<div className="mx-5  text-center d-flex">
+<div className="d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Capital gains report</div>
+<div class="">Capital gains report</div>
 </div>
-<div className="mx-5 mb-2 mt-2  text-center d-flex">
+<div className="mb-2 mt-2 d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Export to TurboTax</div>
+<div class="">Export to TurboTax</div>
 </div>
-<div className="mx-5 mt-2 text-center d-flex">
+<div className="mt-2 d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Export to TaxAct</div>
+<div class="">Export to TaxAct</div>
 </div>
-<div className="mx-5 mt-2  text-center d-flex">
+<div className="mt-2 d-flex">
 <img src={rightimage}></img>
-<div class="my-auto">Referral to affiliate crypto tax advisor</div>
+<div class="">Referral to affiliate crypto tax advisor</div>
 </div>
 </div>
 </div>
