@@ -72,9 +72,7 @@ class ProductProvider extends Component {
 
  
 // };
-
-
-  render() {
+render() {
     return (
       <ProductContext.Provider value={{
         ...this.state,
